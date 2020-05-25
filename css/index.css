@@ -1,5 +1,6 @@
 /* @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
 */
+
 @font-face {
   font-family: PopRegular;
   src: url("/fonts/Poppins-Medium.ttf");
@@ -9,6 +10,8 @@
   margin: 0;
   box-sizing: border-box;
   font-family: "PopRegular";
+  color: beige;
+  font-size: 15px;
 }
 
 .topnavbar {
@@ -25,16 +28,24 @@
   padding-top: 15px;
   padding-left: 10px;
   margin-left: 10px;
-  color: black;
+  color: beige;
+  text-align: left;
+  position: relative;
+}
+.navlist li {
+  display: flex;
+  margin: 5px;
 }
 .navlist li a {
-  color: black;
-  font-size: 20px;
+  font-family: "PopRegular";
+  color: beige;
+  font-size: 15px;
   margin-left: 10px;
   margin-right: 10px;
 }
 .navlist li a:hover {
-  transform: scaleX(1.2);
+  transform: scaleX(1.1);
+  box-shadow: 0 3px orange;
 }
 
 .siteheader {
@@ -47,7 +58,6 @@
     rgba(91, 193, 239, 1) 40.4%,
     rgba(119, 94, 173, 1) 115.3%
   );
-  clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 0% 100%);
 }
 
 .contentbox {
@@ -62,6 +72,13 @@
   color: antiquewhite;
   text-align: center;
 }
+.rightside h1 {
+  font-size: 60px;
+}
+.rightside p {
+  font-size: 20px;
+  text-align: left;
+}
 .welcomebtn {
   font-size: 20px;
   width: auto;
@@ -74,4 +91,8 @@
 .dropdown-menu:hover {
   overflow: hidden;
   color: black;
+}
+
+.dropmenu {
+  background: lightsteelblue;
 }
